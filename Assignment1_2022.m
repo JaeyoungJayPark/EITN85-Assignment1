@@ -103,8 +103,8 @@ ylabel('cumulative distribution function of $SSF_{amp}$', 'FontSize', 13, 'Inter
 title('\textbf{CDF of Small Scale Fading Amplitude}', 'Interpreter', 'latex', 'FontSize', 14)
 %-------------------------------------------------- 
 
-
 %--------------------------------------------------
+
 %A5: Plot the cdf for the Rice distribution with the
 %parameter estimates given in the assignment. Hint:
 %Type "help marcumq".
@@ -122,4 +122,5 @@ legend('Emprical', 'Rayleigh Modelled', 'Rice Modelled', 'Location', 'best', 'In
 xlabel('Small Scale Fading amplitude', 'FontSize', 13, 'Interpreter', 'latex') %label for the x-axis
 ylabel('cumulative distribution function of $SSF_{amp}$','FontSize', 13, 'Interpreter', 'latex') %label for the y-axis.
 title('\textbf{CDF of Small Scale Fading Amplitude}', 'Interpreter', 'latex', 'FontSize', 14)
+
 %-------------------------
