@@ -123,11 +123,3 @@ xlabel('Small Scale Fading amplitude', 'FontSize', 13, 'Interpreter', 'latex') %
 ylabel('cumulative distribution function of $SSF_{amp}$','FontSize', 13, 'Interpreter', 'latex') %label for the y-axis.
 title('\textbf{CDF of Small Scale Fading Amplitude}', 'Interpreter', 'latex', 'FontSize', 14)
 %-------------------------
-
-
-
-
-
-
-
-
