@@ -1,2 +1,2 @@
 # EITN85-Assignment1
-Jaeyoung Park
+Jaeyoung Park, Wireless Communications, Lund University, Sweden
