@@ -34,7 +34,6 @@ semilogx((D_win),10*log10(P_SSA),'bo') %Plot small-scale averaged channel gain
 semilogx(([10 200]),-20*log10(4*pi*[10 200]/(3e8/2.6e9)),'r-')
 %A legend of for window 1:
 legend('Channel gain','Small-scale averaged channel gain','Free space channel gain', 'Location', 'best', 'Location', 'best', 'Interpreter','latex', 'Fontsize', 11)
-
 %--------------------------------------------------
 
 %A2: Find the ordinary least-squares estimate of PL(d0)
@@ -53,7 +52,6 @@ grid on %add grid
 hold on %hold on, to be able to plot another figure, while keeping the old plot.
 plot((D_win),10*log10(P_SSA),'bo',D_win,fun(x,D_win),'g-', 'LineWidth', 1.2)
 legend('Small-scale averaged channel gain','OLS fitted curve', 'Location', 'best', 'Location', 'best', 'Interpreter','latex', 'Fontsize', 11)
-
 %--------------------------------------------------
 
 %A3: In a new window, plot the empirical cdf of the large-scale fading from
@@ -122,5 +120,4 @@ legend('Emprical', 'Rayleigh Modelled', 'Rice Modelled', 'Location', 'best', 'In
 xlabel('Small Scale Fading amplitude', 'FontSize', 13, 'Interpreter', 'latex') %label for the x-axis
 ylabel('cumulative distribution function of $SSF_{amp}$','FontSize', 13, 'Interpreter', 'latex') %label for the y-axis.
 title('\textbf{CDF of Small Scale Fading Amplitude}', 'Interpreter', 'latex', 'FontSize', 14)
-
 %-------------------------
