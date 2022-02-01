@@ -39,7 +39,6 @@ legend('Channel gain','Small-scale averaged channel gain','Free space channel ga
 
 %A2: Find the ordinary least-squares estimate of PL(d0)
 %and pathloss exponent n:
-
 d_0 = 1;
 fun = @(x,D_win)x(1)-10*x(2)*log10(D_win/d_0); %P(d) = P(d_0) - 10*n*log(10/d_0)
 x = lsqcurvefit(fun,[0,0],D_win,10*log10(P_SSA));
@@ -47,7 +46,6 @@ x = lsqcurvefit(fun,[0,0],D_win,10*log10(P_SSA));
 PL_d = x(1) - 10*x(2)*log10(D_win/d_0);
 
 %Plot the average received power using the pathloss estimates found above: 
-
 figure(2)
 xlabel('Tx-Rx separation distance [m]', 'FontSize', 13, 'Interpreter', 'latex') %label for the x-axis
 ylabel('Channel gain [dB]', 'FontSize', 13, 'Interpreter', 'latex') %label for the y-axis.
@@ -70,7 +68,6 @@ hold on; grid on;
 
 %Plot the CDF for the normal distribution based on the maximum-likelihood estimate
 %for a normal distribution: 
-
 N_LSF = length(LSF);
 
 mean_LSF = 1/N_LSF * sum(LSF);
